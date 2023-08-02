@@ -67,7 +67,7 @@ class MobileAccount:
             await self.refresh()
         resp = await self._session.request(
             method,
-            f"https://pool.aseko.com/api/v1/{path}",
+            f"https://pool.aseko.com/api/v2/{path}",
             data=data,
             headers=None
             if self._access_token is None
